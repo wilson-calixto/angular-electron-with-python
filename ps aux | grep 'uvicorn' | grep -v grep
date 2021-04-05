@@ -1,0 +1,3 @@
+ps aux | grep 'uvicorn' | grep -v grep
+
+kill -9 12345
