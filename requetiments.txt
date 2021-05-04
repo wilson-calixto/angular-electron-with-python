@@ -1,2 +1,6 @@
 uvicorn
 fastapi
+websockets
+opencv-python==3.4.1.15
+pypylon==1.7.2
+imageio==2.9.0

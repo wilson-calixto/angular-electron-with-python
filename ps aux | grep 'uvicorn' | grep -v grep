@@ -1,5 +1,11 @@
 ps aux | grep 'uvicorn' | grep -v grep
 
-kill -9 12345
 
+source "/home/icts/projects/newStation/prova-de-conceito-fastapi (copy)/fastapi-venv/bin/activate"
+kill -9 12345
+uvicorn main:app 
+
+
+sudo su
+conda activate brainiac
 uvicorn main:app 

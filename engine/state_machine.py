@@ -29,20 +29,7 @@ class StateMachine():
         self.state: str = 'load'
         self.sm: dict = {}
         self.last_args={}
-        self.temp_dict={0: "load_configuration",
-1: "setup_station",
-2: "update_system",
-3: "select_model",
-4: "configure_model_testing",
-3: "select_model",
-5: "start_a_test_sequence",
-3: "return_to_system_configuration",
-6: "running_a_test_sequence",
-7: "cancel_a_test_sequence",
-9: "report_error_in_hw",
-10: "return_to_configuration_of_test",
-11:"feedback"
-}
+
         self.inicia_tread()
 
     def inicia_tread(self):
@@ -54,10 +41,7 @@ class StateMachine():
         self.thread = None
         exit(0)
 
-    def show_available_events(self):
-        for key in self.sm[self.state].keys():
-            my_dict={"available_event_number":key,"event_name":self.temp_dict[key]}
-            print(json.dumps(my_dict))
+
     
     def get_available_events(self):
         my_list=[]
